@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIMUL — Sistema Integrado de Monitoramento Urbano de Limpeza</title>
+  <meta name="description" content="Projeto Integrador SIMUL: plataforma web para consulta da coleta seletiva e lembretes por e-mail. Faculdade SENAI FATESG, ADS, 2026.">
+  <meta name="theme-color" content="#0e3b36">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%99%BB%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <div class="container topo__in">
+      <a class="marca" href="#inicio" aria-label="SIMUL — início">SIMUL</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <a href="#projeto">O projeto</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#repositorio">Repositório</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero__in">
+        <div class="hero__txt">
+          <p class="selo">Projeto Integrador · ADS · 2026</p>
+          <h1>SIMUL</h1>
+          <p class="hero__sub">Sistema Integrado de Monitoramento Urbano de Limpeza</p>
+          <p class="hero__lead">Uma plataforma web que ajuda moradores a saber quando a coleta seletiva passa na sua região, com lembretes para não esquecer de colocar os recicláveis para fora.</p>
+          <div class="acoes">
+            <a class="btn btn--claro" href="#projeto">Conhecer o projeto</a>
+            <a class="btn btn--vazado" href="#equipe">Ver a equipe</a>
+          </div>
+        </div>
+        <svg class="hero__arte" viewBox="0 0 420 360" role="img" aria-label="Ilustração de uma rota de coleta ligando quarteirões da cidade">
+          <rect x="10" y="10" width="400" height="340" rx="28" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".18"/>
+          <g stroke="#ffffff" stroke-opacity=".14" stroke-width="2">
+            <path d="M10 110h400M10 220h400M120 10v340M280 10v340"/>
+          </g>
+          <path class="rota" d="M50 300 C 120 300, 100 200, 170 190 S 240 90, 300 100 S 360 60, 375 50" fill="none" stroke="#7be0b0" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14"/>
+          <circle cx="50" cy="300" r="10" fill="#7be0b0"/>
+          <circle cx="170" cy="190" r="8" fill="#ffffff"/>
+          <circle cx="300" cy="100" r="8" fill="#ffffff"/>
+          <g transform="translate(375 50)">
+            <path d="M0 22C-14 4-18-6-18-14a18 18 0 0 1 36 0C18-6 14 4 0 22z" fill="#f2c14e"/>
+            <circle cy="-14" r="6" fill="#0e3b36"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="secao" id="projeto">
+      <div class="container estreito">
+        <h2>O que é o SIMUL</h2>
+        <p>O SIMUL é um sistema web desenvolvido como Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas. Ele reúne em um só lugar as rotas, os dias e os horários da coleta seletiva, e avisa o morador por e-mail ou notificação do navegador antes da coleta acontecer.</p>
+        <p>O tema une tecnologia, sustentabilidade e inovação, no contexto de cidades inteligentes e da gestão de resíduos sólidos urbanos.</p>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="problema">
+      <div class="container">
+        <h2>O problema</h2>
+        <p class="intro">Hoje, o horário da coleta costuma ser divulgado em tabelas em sites, panfletos ou avisos genéricos. O morador fica sem clareza sobre quando o caminhão passa.</p>
+        <ul class="trio">
+          <li><h3>Esquecimento</h3><p>O morador perde a passagem da coleta e mantém os recicláveis em casa.</p></li>
+          <li><h3>Descarte inadequado</h3><p>O material reciclável acaba misturado ao lixo comum.</p></li>
+          <li><h3>Lixo na rua</h3><p>Resíduos expostos por tempo demais atraem animais e se sujam com a chuva.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" id="solucao">
+      <div class="container">
+        <h2>Objetivo e solução proposta</h2>
+        <p class="intro">Melhorar a previsibilidade e o acesso às informações da coleta seletiva, reduzindo esquecimentos e descarte inadequado.</p>
+        <div class="duas">
+          <article class="bloco bloco--ok">
+            <h3>Implementado</h3>
+            <ul>
+              <li>Consulta pública da coleta por cidade e bairro</li>
+              <li>Rota, dias da semana e horários</li>
+              <li>Mapa com OpenStreetMap e localização do morador</li>
+              <li>Cadastro, login, verificação de e-mail e recuperação de senha</li>
+              <li>Lembretes automáticos por e-mail e por Web Push</li>
+              <li>Histórico de notificações, sem envios duplicados</li>
+              <li>Painel administrativo de rotas, áreas e cronogramas</li>
+            </ul>
+          </article>
+          <article class="bloco bloco--pend">
+            <h3>Pendente</h3>
+            <ul>
+              <li>Guia de descarte consciente, previsto no escopo e ainda não incluído no código atual</li>
+            </ul>
+          </article>
+          <article class="bloco bloco--futuro">
+            <h3>Evolução futura</h3>
+            <ul>
+              <li>Rastreamento do caminhão em tempo real</li>
+              <li>GPS dos veículos</li>
+              <li>Alertas por aproximação do caminhão</li>
+              <li>Aplicativo mobile nativo</li>
+            </ul>
+          </article>
+        </div>
+        <p class="nota">Estado conforme o código-fonte atual do repositório. O mapa mostra áreas de coleta e a localização do próprio morador, não os caminhões.</p>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="tecnologias">
+      <div class="container">
+        <h2>Tecnologias</h2>
+        <p class="intro">A pilha técnica definida para o desenvolvimento do SIMUL.</p>
+        <ul class="chips">
+          <li>React.js</li><li>Vite</li><li>Java 21</li><li>Spring Boot</li><li>Maven</li>
+          <li>PostgreSQL</li><li>Flyway</li><li>JWT</li><li>BCrypt</li>
+          <li>Spring Security</li><li>Leaflet</li><li>OpenStreetMap</li><li>E-mail via SMTP</li><li>Web Push</li><li>Docker</li><li>Render</li><li>Git e GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" id="equipe">
+      <div class="container">
+        <h2>Equipe</h2>
+        <p class="intro">Cinco integrantes, cada um com uma responsabilidade no projeto.</p>
+        <div class="equipe">
+          <article class="membro" data-github="">
+            <div class="avatar" aria-hidden="true">CM</div>
+            <h3>Caio Vinicius Souza Martins</h3>
+            <p class="papel">Gerente do Projeto e Analista de Requisitos</p>
+            <p class="gh-slot">GitHub: link a definir</p>
+          </article>
+          <article class="membro" data-github="">
+            <div class="avatar" aria-hidden="true">DA</div>
+            <h3>Davi Martins Alexandre</h3>
+            <p class="papel">Líder de Back-end</p>
+            <p class="gh-slot">GitHub: link a definir</p>
+          </article>
+          <article class="membro" data-github="">
+            <div class="avatar" aria-hidden="true">EG</div>
+            <h3>Enzo Aquino Guimarães</h3>
+            <p class="papel">Líder de Front-end e UX</p>
+            <p class="gh-slot">GitHub: link a definir</p>
+          </article>
+          <article class="membro" data-github="">
+            <div class="avatar" aria-hidden="true">FP</div>
+            <h3>Fernando Papacosta Porta Pereira</h3>
+            <p class="papel">Banco de Dados e Integrações</p>
+            <p class="gh-slot">GitHub: link a definir</p>
+          </article>
+          <article class="membro" data-github="">
+            <div class="avatar" aria-hidden="true">RB</div>
+            <h3>Renato Borges Campos</h3>
+            <p class="papel">Qualidade, Testes e DevOps</p>
+            <p class="gh-slot">GitHub: link a definir</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="repositorio">
+      <div class="container estreito centro">
+        <h2>Repositório oficial</h2>
+        <p>O código-fonte do SIMUL está publicado no GitHub, na organização SIMUL-System.</p>
+        <a class="btn btn--escuro" href="https://github.com/SIMUL-System/simul-system" target="_blank" rel="noopener noreferrer">Abrir simul-system no GitHub<span class="sr"> (abre em nova aba)</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Faculdade SENAI FATESG</strong></p>
+      <p>Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+      <p>Goiânia, 2026. Site institucional independente do sistema SIMUL.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
